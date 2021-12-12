@@ -10,6 +10,7 @@ end
 
 def numbers
   bingos = [B, I, N, G, O].map { |bingo| bingo.sample(5) }.transpose
+  bingos[2][2] = "  "
   bingos.map  { |bin|
     bin.join(" | ")
   }.join("\n")
